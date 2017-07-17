@@ -22,7 +22,12 @@ public class cucumberJava {
    @When("^I open Comquent website$") 
    public void goToComquent() { 
       driver.navigate().to("https://www.comquent.com/"); 
-   } 
+   } System.getProperty("os.name")
+
+   @When("^I open Petclinic website$") 
+   public void goToPetclinic() { 
+      driver.navigate().to(System.getProperty("petclinic.url")); 
+   }
 
    @Then("^Login button should exits$") 
    public void loginButton() { 
