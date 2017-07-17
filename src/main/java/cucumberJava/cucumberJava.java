@@ -12,7 +12,7 @@ public class cucumberJava {
    @Given("^I have open the browser$") 
    public void openBrowser() {
 //	 System.setProperty("webdriver.chrome.driver", "C:\\workspaces\\cucumber\\webdriver\\chromedriver.exe");
-      driver = new ChromeDriver(); 
+      driver = new FirefoxDriver(); 
    } 
    @When("^I open Facebook website$") 
    public void goToFacebook() { 
